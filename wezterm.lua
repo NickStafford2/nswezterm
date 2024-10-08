@@ -29,7 +29,7 @@ config.background = {
 		source = {
 			-- File = "/home/nick/Pictures/carina-nebula-cosmic-cliffs-james-webb-space-telescope-3840x2160-8689.jpg",
 			-- File = "/home/nick/Pictures/simple-subtle-abstract-dark-minimalism-4k-u9.jpg",
-			File = "/home/nick/Pictures/destiny-media-wallpaper-full2.jpg",
+			File = "/home/nick/.config/wezterm/background.jpg",
 			-- File = "/home/nick/Pictures/all-black-background-3qmchue5uy6t6fis.jpg",
 			-- File = "/home/nick/Pictures/Subtle Wallpaper Top Background.jpg",
 		},
@@ -48,9 +48,9 @@ config.background = {
 		-- attachment = { Parallax = 0.1 },
 	},
 }
-config.window_background_image =
-	"/home/nick/Pictures/carina-nebula-cosmic-cliffs-james-webb-space-telescope-3840x2160-8689.jpg"
+-- config.window_background_image =
+-- "/home/nick/Pictures/carina-nebula-cosmic-cliffs-james-webb-space-telescope-3840x2160-8689.jpg"
 -- config.window_background_opacity = 0.9
-config.macos_window_background_blur = 10
+-- config.macos_window_background_blur = 10
 -- and finally, return the configuration to wezterm
 return config
