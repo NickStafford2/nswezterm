@@ -1,2 +1,2 @@
 # nswizterm
-wizterm configuration
+wezterm configuration
