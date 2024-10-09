@@ -21,7 +21,7 @@ config.color_scheme = "Builtin Solarized Dark"
 -- config.color_scheme = "solarized-osaka_day.toml"
 config.enable_tab_bar = false
 
-config.window_decorations = "RESIZE"
+config.window_decorations = "TITLE |RESIZE"
 
 local dimmer = { brightness = 0.03 }
 config.background = {
