@@ -53,4 +53,42 @@ config.background = {
 -- config.window_background_opacity = 0.9
 -- config.macos_window_background_blur = 10
 -- and finally, return the configuration to wezterm
+
+-- Disable Ctrl+Shift+n to prevent new tabs or windows from opening
+config.keys = {
+	-- {
+	-- 	key = "n",
+	-- 	mods = "CTRL|SHIFT",
+	-- 	action = wezterm.action.DisableDefaultAssignment,
+	-- 	-- action = wezterm.action.Nop, -- No operation (do nothing)
+	-- },
+
+	-- {
+	-- 	key = "a",
+	-- 	mods = "CTRL",
+	-- 	-- mods = "SHIFT|ALT|CTRL|CMD",
+	-- 	action = wezterm.action.Nop, -- No operation (do nothing)
+	-- 	-- action = wezterm.action.DisableDefaultAssignment,
+	-- },
+	-- {
+	-- 	key = "x",
+	-- 	-- mods = "SHIFT|ALT|CTRL|CMD",
+	-- 	mods = "CTRL",
+	-- 	action = wezterm.action.Nop, -- No operation (do nothing)
+	-- 	-- action = wezterm.action.DisableDefaultAssignment,
+	-- },
+}
+-- Disable mouse scroll events (no action when scrolling)
+-- testin
+-- config.mouse_bindings = {
+-- 	{ mods = "NONE", key = "WheelUp", action = wezterm.action.Nop },
+-- 	{ mods = "NONE", key = "WheelDown", action = wezterm.action.Nop },
+-- }
+--
+-- -- Optionally disable default mouse bindings
+-- config.disable_default_mouse_bindings = true
+--
+-- -- If you are using mouse wheel to scroll through tabs, disable it
+-- config.mouse_wheel_scrolls_tabs = false
+
 return config
