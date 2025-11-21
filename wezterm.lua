@@ -4,8 +4,6 @@ local wezterm = require("wezterm")
 -- This will hold the configuration.
 local config = wezterm.config_builder()
 
--- This is where you actually apply your config choices
-
 config.font = wezterm.font("JetBrainsMono Nerd Font Mono")
 config.font_size = 11
 
@@ -52,7 +50,6 @@ config.background = {
 -- "/home/nick/Pictures/carina-nebula-cosmic-cliffs-james-webb-space-telescope-3840x2160-8689.jpg"
 -- config.window_background_opacity = 0.9
 -- config.macos_window_background_blur = 10
--- and finally, return the configuration to wezterm
 
 -- Disable Ctrl+Shift+n to prevent new tabs or windows from opening
 config.keys = {
@@ -79,7 +76,6 @@ config.keys = {
 	-- },
 }
 -- Disable mouse scroll events (no action when scrolling)
--- testin
 -- config.mouse_bindings = {
 -- 	{ mods = "NONE", key = "WheelUp", action = wezterm.action.Nop },
 -- 	{ mods = "NONE", key = "WheelDown", action = wezterm.action.Nop },
@@ -90,5 +86,12 @@ config.keys = {
 --
 -- -- If you are using mouse wheel to scroll through tabs, disable it
 -- config.mouse_wheel_scrolls_tabs = false
+
+config.window_padding = {
+	left = 0,
+	right = 0,
+	top = 1,
+	bottom = 0,
+}
 
 return config
